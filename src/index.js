@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Provider } from 'react-redux';
-import store from './store'; // Correct import path
+import store from './store';
 
 ReactDOM.render(
   <React.StrictMode>

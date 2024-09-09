@@ -1,4 +1,5 @@
 /* src/components/ProductDetails.css */
+
 .product-details-container {
     display: flex;
     padding: 20px;
@@ -36,6 +37,12 @@
   
   .content-section p {
     font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .content-section .category {
+    font-size: 1rem;
+    color: #555;
     margin-bottom: 15px;
   }
   

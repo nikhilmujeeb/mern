@@ -28,6 +28,7 @@ function ProductDetails() {
         </div>
         <div className="content-section">
           <h2>{product.title}</h2>
+          <p className="category">Category: {product.category}</p>
           <p>{product.description}</p>
           <h3>${product.price}</h3>
           <button className="btn btn-primary" onClick={handleAddToCart}>Add to Cart</button>

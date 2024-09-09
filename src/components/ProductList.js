@@ -11,7 +11,6 @@ function ProductList({ products }) {
     dispatch(addToCart(product));
   };
 
-  // Debugging: Log products to ensure correct data
   console.log('Products in ProductList:', products);
 
   return (

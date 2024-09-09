@@ -26,9 +26,10 @@ function NavbarComponent() {
           <Nav.Link as={Link} to="/">Home</Nav.Link>
           <Nav.Link as={Link} to="/products">Products</Nav.Link>
           <NavDropdown title="Categories" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="/products?category=clothing">Clothing</NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/products?category=accessories">Accessories</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/products?category=electronics">Electronics</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/products?category=jewelery">Jewelery</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/products?category=men's clothing">Men's Clothing</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/products?category=women's clothing">Women's Clothing</NavDropdown.Item>
           </NavDropdown>
           {userName ? (
             <>
@@ -39,8 +40,10 @@ function NavbarComponent() {
             <Nav.Link as={Link} to="/login">Login</Nav.Link>
           )}
           <Nav.Link as={Link} to="/cart">
-            <i className="fa fa-shopping-cart"></i>
-            <span className="badge">{cartItemCount}</span>
+            <i className="fa fa-shopping-cart" aria-label="cart"></i>
+            <span className="badge badge-pill badge-danger" aria-label="cart items count">
+              {cartItemCount}
+            </span>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

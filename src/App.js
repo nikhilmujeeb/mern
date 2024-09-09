@@ -10,7 +10,7 @@ import Login from './pages/Login';
 import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
 import OrderPlaced from './pages/OrderPlaced';
-import CategoryPage from './pages/CategoryPage'; // Import CategoryPage
+import CategoryPage from './pages/CategoryPage';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order-placed" element={<OrderPlaced />} />
-          <Route path="/products/category/:category" element={<CategoryPage />} /> {/* Add category route */}
+          <Route path="/products/category/:category" element={<CategoryPage />} />
         </Routes>
         <Footer />
       </Router>
