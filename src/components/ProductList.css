@@ -1,0 +1,119 @@
+body {
+  background-image: url('https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2017/10/website-pattern-1.jpg');
+  background-size: cover; /* Ensure the background image covers the whole page */
+  background-attachment: fixed; /* Keep the background image fixed during scrolling */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+.products-container {
+  padding: 20px;
+  margin-top: 60px; /* Adjust based on your navbar height */
+  background-color: rgba(248, 249, 250, 0.75); /* Semi-transparent background */
+  min-height: calc(100vh - 60px); /* Adjust based on your navbar height */
+  font-size: large;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 600px; /* Increased height for more space */
+  max-width: 300px; /* Consistent width for all cards */
+  justify-content: space-between;
+  margin: auto; /* Centers the card horizontally */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px; /* Adjusted height for the image */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-common {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none; /* Ensure no underline */
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-common:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  color: #fff; /* Keeps text color the same on hover */
+}
+
+.button-group a.btn-common {
+  text-decoration: none; /* Ensure no underline for links */
+  color: #fff; /* Text color for links */
+}
+
+.button-group a.btn-common:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  color: #fff; /* Keep text color the same on hover */
+}
+
+@media (max-width: 767px) {
+  .product-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    margin-bottom: 30px;
+  }
+}

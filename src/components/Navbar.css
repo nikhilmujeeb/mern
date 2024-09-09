@@ -1,0 +1,84 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: #ff0000; /* Dark background color */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #cc0000; /* Subtle bottom border */
+  padding: 0.5rem 1rem; /* Adjusted padding for a balanced Navbar */
+}
+
+.navbar-brand {
+  font-size: 1.25rem; /* Slightly larger font size for better visibility */
+  color: #f8f9fa; /* Light color for the brand name */
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar-brand:hover {
+  color: #ffd700; /* Gold color on hover for better contrast */
+}
+
+.nav-link {
+  color: #f8f9fa; /* White color for the navigation links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Gold color on hover for better visibility */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Push items to the right */
+}
+
+.nav-item {
+  margin-left: 1rem; /* Consistent spacing between items */
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar-toggler {
+  border-color: #f8f9fa; /* White border for the toggle button */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /%3E%3C/svg%3E'); /* White toggle icon */
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 1rem; /* Standard font size for better readability */
+}
+
+.badge {
+  font-size: 0.875rem; /* Slightly larger font size for better visibility */
+  padding: 0.3rem 0.5rem; /* Adjusted padding for a more balanced badge */
+  background-color: #ff0000;
+}
+
+/* Style for the disabled nav link to match the color of other links */
+.nav-link.disabled {
+  color: #f8f9fa; /* Match color with other nav links */
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    width: 100%;
+    background-color: #ff0000; /* Ensure background color is applied in the collapsed state */
+    border-top: 1px solid #cc0000; /* Optional: border for the collapsed menu */
+  }
+
+  .navbar-nav {
+    margin: 0; /* Remove margin on smaller screens */
+  }
+
+  .nav-item {
+    margin: 0.5rem 0; /* Adjust spacing between items on smaller screens */
+  }
+}

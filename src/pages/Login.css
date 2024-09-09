@@ -1,0 +1,41 @@
+body {
+  background-image: url('https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2017/10/website-pattern-1.jpg');
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75); /* White background with 75% opacity */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle 3D effect */
+  font-size: large;
+  padding-top: 60px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center-align the heading */
+}
+
+.form-group label {
+  font-weight: bold; /* Make the labels bold */
+}
+
+.form-control {
+  border-radius: 4px; /* Rounded corners for the input fields */
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  width: 100%; /* Make the button full width */
+  border-radius: 4px; /* Rounded corners for the button */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Center the container vertically */
+  padding-top: 40px; /* Additional padding at the top */
+}
