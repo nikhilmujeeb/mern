@@ -1,33 +1,32 @@
-/* src/components/ProductDetails.css */
 
 .product-details-container {
     display: flex;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent background */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    background-color: rgba(255, 255, 255, 0.85); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     font-size: large;
     padding-top: 90px;
   }
   
   .image-section {
-    flex: 1; /* Takes up 1 part of the flex container */
-    padding-right: 20px; /* Space between image and content */
+    flex: 1; 
+    padding-right: 20px; 
   }
   
   .image-section img {
     width: 100%;
-    height: auto; /* Maintains aspect ratio */
-    max-height: 400px; /* Adjust as needed */
-    object-fit: cover; /* Ensures the image covers the container */
-    border-radius: 8px; /* Rounded corners for the image */
+    height: auto;
+    max-height: 400px;
+    object-fit: cover; 
+    border-radius: 8px; 
   }
   
   .content-section {
-    flex: 2; /* Takes up 2 parts of the flex container */
-    margin-top: 30px; /* Moves the content lower */
+    flex: 2; 
+    margin-top: 30px; 
   }
   
   .content-section h2 {
@@ -73,7 +72,7 @@
     }
   
     .image-section img {
-      max-height: 300px; /* Adjust for smaller screens */
+      max-height: 300px; 
     }
   }
   

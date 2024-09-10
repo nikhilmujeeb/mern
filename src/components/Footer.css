@@ -1,10 +1,10 @@
 
 .footer {
-  background-color: #cc0000; /* Dark background color */
-  color: #f8f9fa; /* Light text color */
-  padding: 2px 0; /* Very minimal padding */
+  background-color: #cc0000;
+  color: #f8f9fa; 
+  padding: 2px 0; 
   width: 100%;
-  border-top: 1px solid #bb0000; /* Darker border for separation */
+  border-top: 1px solid #bb0000; 
   position: relative;
   bottom: 0;
 }
@@ -12,7 +12,7 @@
 .footer .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5px; /* Minimal padding inside the container */
+  padding: 0 5px; 
 }
 
 .footer-content {
@@ -24,30 +24,30 @@
 
 .footer-logo h3 {
   margin: 0;
-  font-size: 1.5rem; /* Doubled font size for the logo */
+  font-size: 1.5rem;
   color: #f8f9fa;
 }
 
 .footer-links {
   display: flex;
-  gap: 5px; /* Small gap between links */
-  margin: 2px 0; /* Minimal margin */
+  gap: 5px; 
+  margin: 2px 0; 
 }
 
 .footer-links a {
   color: #f8f9fa;
-  text-decoration: none; /* No underline by default */
-  font-size: 1rem; /* Doubled font size for links */
-  transition: color 0.3s ease; /* Smooth transition on hover */
+  text-decoration: none; 
+  font-size: 1rem; 
+  transition: color 0.3s ease; 
 }
 
 .footer-links a:hover {
-  color: #ffcccc; /* Light hover effect color */
-  text-decoration: none; /* No underline on hover */
+  color: #ffcccc; 
+  text-decoration: none; 
 }
 
 .footer-info {
-  font-size: 0.9rem; /* Increased font size for footer info */
+  font-size: 0.9rem;
   color: #e9ecef;
 }
 

@@ -1,26 +1,22 @@
-// src/pages/Login.js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { setUserName } from '../redux/userSlice'; // Ensure this path is correct
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import './Login.css'; // Import the CSS file
+import { setUserName } from '../redux/userSlice'; 
+import { useNavigate } from 'react-router-dom'; 
+import './Login.css'; 
 
 function Login() {
   const [username, setUsername] = useState('');
   const dispatch = useDispatch();
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
 
   const handleLogin = (event) => {
     event.preventDefault();
 
-    // Simulate authentication process
     const user = { name: username };
 
-    // Update Redux store with the logged-in user's name
     dispatch(setUserName(user.name));
 
-    // Redirect to the homepage after successful login
-    navigate('/'); // Use navigate to redirect
+    navigate('/'); 
   };
 
   return (

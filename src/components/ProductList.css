@@ -1,9 +1,9 @@
 
 .products-container {
   padding: 20px;
-  margin-top: 60px; /* Adjust based on your navbar height */
-  background-color: rgba(248, 249, 250, 0.75); /* Semi-transparent background */
-  min-height: calc(100vh - 60px); /* Adjust based on your navbar height */
+  margin-top: 60px; 
+  background-color: rgba(248, 249, 250, 0.75); 
+  min-height: calc(100vh - 60px); 
   font-size: large;
 }
 
@@ -22,10 +22,10 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  height: 600px; /* Increased height for more space */
-  max-width: 300px; /* Consistent width for all cards */
+  height: 600px; 
+  max-width: 300px;
   justify-content: space-between;
-  margin: auto; /* Centers the card horizontally */
+  margin: auto; 
 }
 
 .product-card:hover {
@@ -34,7 +34,7 @@
 
 .product-card img {
   width: 100%;
-  height: 200px; /* Adjusted height for the image */
+  height: 200px;
   object-fit: cover;
 }
 
@@ -78,7 +78,7 @@
   border-radius: 5px;
   width: 120px;
   text-align: center;
-  text-decoration: none; /* Ensure no underline */
+  text-decoration: none; 
   display: inline-block;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -86,18 +86,18 @@
 .btn-common:hover {
   background-color: #c82333;
   border-color: #bd2130;
-  color: #fff; /* Keeps text color the same on hover */
+  color: #fff; 
 }
 
 .button-group a.btn-common {
-  text-decoration: none; /* Ensure no underline for links */
-  color: #fff; /* Text color for links */
+  text-decoration: none; 
+  color: #fff;
 }
 
 .button-group a.btn-common:hover {
   background-color: #c82333;
   border-color: #bd2130;
-  color: #fff; /* Keep text color the same on hover */
+  color: #fff; 
 }
 
 @media (max-width: 767px) {

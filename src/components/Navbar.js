@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectCartItemCount } from '../redux/productsSlice'; // Adjust path if needed
-import { selectUserName, setUserName } from '../redux/userSlice'; // Adjust path if needed
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'; // Import react-bootstrap components
-import './Navbar.css'; // Import custom CSS file
+import { selectCartItemCount } from '../redux/productsSlice'; 
+import { selectUserName, setUserName } from '../redux/userSlice'; 
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'; 
+import './Navbar.css'; 
 
 function NavbarComponent() {
   const cartItemCount = useSelector(selectCartItemCount);
@@ -13,8 +13,8 @@ function NavbarComponent() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    dispatch(setUserName('')); // Clear user name from the Redux store
-    navigate('/'); // Redirect to home page
+    dispatch(setUserName('')); 
+    navigate('/'); 
   };
 
   return (

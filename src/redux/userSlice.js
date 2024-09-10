@@ -1,4 +1,3 @@
-// src/redux/userSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const userSlice = createSlice({
@@ -13,7 +12,6 @@ const userSlice = createSlice({
   },
 });
 
-// Selector to get the user's name
 export const selectUserName = (state) => state.user.name;
 
 export const { setUserName } = userSlice.actions;

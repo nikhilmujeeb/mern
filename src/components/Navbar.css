@@ -1,84 +1,83 @@
-/* src/components/Navbar.css */
 .navbar {
-  background-color: #ff0000; /* Dark background color */
-  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: #ff0000; 
+  z-index: 1000; 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid #cc0000; /* Subtle bottom border */
-  padding: 0.5rem 1rem; /* Adjusted padding for a balanced Navbar */
+  border-bottom: 1px solid #cc0000; 
+  padding: 0.5rem 1rem; 
 }
 
 .navbar-brand {
-  font-size: 1.25rem; /* Slightly larger font size for better visibility */
-  color: #f8f9fa; /* Light color for the brand name */
+  font-size: 1.25rem;
+  color: #f8f9fa; 
   font-weight: bold;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar-brand:hover {
-  color: #ffd700; /* Gold color on hover for better contrast */
+  color: #ffd700;
 }
 
 .nav-link {
-  color: #f8f9fa; /* White color for the navigation links */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: #f8f9fa; 
+  transition: color 0.3s ease; 
 }
 
 .nav-link:hover {
-  color: #ffd700; /* Gold color on hover for better visibility */
+  color: #ffd700; 
 }
 
 .navbar-nav {
-  margin-left: auto; /* Push items to the right */
+  margin-left: auto; 
 }
 
 .nav-item {
-  margin-left: 1rem; /* Consistent spacing between items */
+  margin-left: 1rem; 
 }
 
 .navbar-collapse {
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: flex-end; 
 }
 
 .navbar-toggler {
-  border-color: #f8f9fa; /* White border for the toggle button */
+  border-color: #f8f9fa; 
 }
 
 .navbar-toggler-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /%3E%3C/svg%3E'); /* White toggle icon */
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /%3E%3C/svg%3E'); 
 }
 
 .navbar-nav .nav-item .nav-link {
-  font-size: 1rem; /* Standard font size for better readability */
+  font-size: 1rem;
 }
 
 .badge {
-  font-size: 0.875rem; /* Slightly larger font size for better visibility */
-  padding: 0.3rem 0.5rem; /* Adjusted padding for a more balanced badge */
+  font-size: 0.875rem; 
+  padding: 0.3rem 0.5rem; 
   background-color: #ff0000;
 }
 
-/* Style for the disabled nav link to match the color of other links */
+
 .nav-link.disabled {
-  color: #f8f9fa; /* Match color with other nav links */
+  color: #f8f9fa;
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column; 
     width: 100%;
-    background-color: #ff0000; /* Ensure background color is applied in the collapsed state */
-    border-top: 1px solid #cc0000; /* Optional: border for the collapsed menu */
+    background-color: #ff0000; 
+    border-top: 1px solid #cc0000; 
   }
 
   .navbar-nav {
-    margin: 0; /* Remove margin on smaller screens */
+    margin: 0; 
   }
 
   .nav-item {
-    margin: 0.5rem 0; /* Adjust spacing between items on smaller screens */
+    margin: 0.5rem 0; 
   }
 }

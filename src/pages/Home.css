@@ -39,10 +39,10 @@
 }
 
 .button {
-  background-color: #ff0000; /* Red background color */
+  background-color: #ff0000;
   border-color: #ff0000;
-  color: #fff; /* White text color */
-  text-decoration: none; /* No underline */
+  color: #fff; 
+  text-decoration: none; 
   padding: 10px 20px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -52,11 +52,11 @@
 }
 
 .button:hover {
-  background-color: #cc0000; /* Darker red for hover effect */
+  background-color: #cc0000; 
   border-color: #cc0000;
   transform: scale(1.05);
-  text-decoration: none; /* Ensure no underline on hover */
-  color: #fff; /* Ensure text color stays white on hover */
+  text-decoration: none; 
+  color: #fff; 
 }
 
 .banner {
@@ -75,7 +75,7 @@
 .featured-products {
   padding: 60px 20px;
   background-color: transparent;
-  min-height: 400px; /* Adjust height as needed */
+  min-height: 400px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,7 +95,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  justify-content: center; /* Center grid items */
+  justify-content: center; 
 }
 
 .product-card {
@@ -105,7 +105,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ensure all cards stretch to the same height */
+  height: 100%; 
 }
 
 .card-img-top {

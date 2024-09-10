@@ -42,7 +42,7 @@ const Products = () => {
     ? products.filter((product) => product.category === category) 
     : products;
 
-  console.log('Filtered Products:', filteredProducts); // Log filtered products
+  console.log('Filtered Products:', filteredProducts); 
 
   return (
     <div className="products-container">

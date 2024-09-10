@@ -1,9 +1,8 @@
-// src/components/ProductDetails.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../store/productsSlice';
-import './ProductDetails.css'; // Import the CSS file
+import './ProductDetails.css'; 
 
 function ProductDetails() {
   const { id } = useParams();
